@@ -181,7 +181,7 @@ let Delete = (thisdata) => {
         pars.splice(del,1)
         document.getElementById("Table").deleteRow(SelectedRow.rowIndex);
         localStorage.setItem("Employee", JSON.stringify(pars));
-
+        location.reload();
     }
 }
 let Close = () => {
