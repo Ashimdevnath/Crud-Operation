@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employe Crud</title>
+    <link rel="stylesheet" href="./Index.css">
+
+</head>
+
+<body onload="Unload()">
+    <div id="Head">
+        <h1>Employe Crud</h1>
+    </div>
+    <div id="btn-Data">
+        <button id="btn-main" onclick="display()">Add Data</button>
+    </div>
+    <div class="headcenter">
+        <form id="Submit" onsubmit="event.preventDefault();Calldata()">
+            <div id="All-Head-input">
+                <label for="name" id="Name">Name</label>
+                <label for="email" id="Email">Email</label>
+                <label for="city" id="City">City</label>
+            </div>
+            <div id="All-Input">
+                <input type="text" name="Name" id="name" placeholder="Enter Your Name">
+                <input type="email" name="Email" id="email" placeholder="Enter Your Email">
+                <input type="text" name="City" id="city" placeholder="Enter Your City">
+            </div>
+            <div id="BTN">
+                <button id="btn-submit" type="submit">Submit</button>
+                <button id="btn-Reset" type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div id="data-of-curd">
+        <table id="Table">
+            <thead>
+                <tr>
+                    <th>EmployeeID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>City</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div id="div-of-Edit">
+        <form id="Edit-File">
+            <div id="Edit-lable">
+                <label for="Ename" id="EName">Name</label>
+                <label for="Eemail" id="EEmail">Email</label>
+                <label for="Ecity" id="ECity">City</label>
+            </div>
+            <div id="Update">
+                <input type="text" name="Name" id="Ename" placeholder="Enter Your Name">
+                <input type="email" name="Email" id="Eemail" placeholder="Enter Your Email">
+                <input type="text" name="City" id="Ecity" placeholder="Enter Your City">
+            </div>
+            <div id="EData">
+                <button id="btn-Update" type="button" onclick="Edited(this)">UP-Date</button>
+                <button id="btn-Clear" type="reset" onclick="Close()">Close</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>

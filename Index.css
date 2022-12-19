@@ -1,0 +1,174 @@
+body{
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center;  */
+}
+#Head{
+    text-align: center;
+}
+#btn-main{
+    background-color:#5b00b5;
+    color: #fff;
+    padding:1% 1%;
+    border-radius:10px;
+    cursor: pointer;
+
+}
+.headcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    height: 150px;
+    border: 3px solid #5b00b5;
+    background-color: #fff;
+    box-shadow: 2px 3px 10px black;
+}
+
+#All-Head-input{
+    margin-top: 25px; 
+}
+#Name{
+    margin-left: 60px;
+}
+#Email{
+    margin-left: 195px;
+}
+#City{
+    margin-left: 195px;
+}
+
+#All-Input{
+    text-align: center;
+}
+#All-Input input{
+    border: none;
+    padding: 7px;
+    margin: 0px 15px;
+    border-radius: 5px;
+    width: 190px; 
+    color:#5b00b5;
+}
+#All-Input input:hover{
+    box-shadow: 0px 7px 15px black;
+}
+#BTN{
+    text-align: center;
+    margin-top: 25px;
+}
+#btn-submit{
+    margin:0px 25px;
+    padding:1% 1%;
+    background-color: #5b00b5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+#btn-Reset{
+    margin:0px 25px;
+    padding:1% 1%;
+    background-color:red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+#data-of-curd{
+    margin-top:50px;
+    display: flex;
+    justify-content: center;
+}
+table{
+    width: 1200px;
+    margin: auto;
+}
+table th{
+    padding: 15px 30px;
+    background-color: #5b00b5;
+    color: #fff;
+}
+table td{
+    padding: 25px;
+    background-color: #5b00b5;
+    color: #fff;
+    text-align: center;
+}
+#email-data{
+    padding: 0px 150px;
+}
+#Table button:first-child{
+    background-color: rgb(8, 255, 16);
+    padding: 10px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+   margin: 5px;
+}
+#Table button:last-child{
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+/* Pop up display */
+#Edit-File{
+    padding: 35px;
+}
+#Update input{
+    border: none;
+    padding: 7px;
+    margin: 0px 15px;
+    border-radius: 5px;
+    width: 190px; 
+    color:#5b00b5;
+    background-color: rgb(171, 211, 226);
+}
+#Update input:hover{
+    box-shadow: 0px 7px 15px black;
+}
+#EData {
+    text-align: center;
+    margin-top: 25px;
+}
+#btn-Update{
+    margin:0px 25px;
+    padding:7px 10px;
+    background-color: #5b00b5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+#btn-Clear{
+    margin:0px 25px;
+    padding:7px 10px;
+    background-color:red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+#Edit-lable{
+    margin-bottom: 10px;
+}
+#EName{
+    margin-left:15px ;
+    
+}
+#EEmail{
+    margin-left:195px ;
+}
+#ECity{
+    margin-left:198px ;
+}
+#div-of-Edit{
+    z-index: 2;
+    position: relative;
+    bottom: 300px;
+    display: none;
+    left: 400px;
+}
